@@ -1,0 +1,181 @@
+# ===========================================================================
+#
+# Copyright (c) 1998 Retrologic Systems. All Rights Reserved.
+#
+# This software is the confidential and proprietary information of Retrologic
+# Systems ("Confidential Information"). You shall not disclose such
+# Confidential Information and shall use it only in accordance with the terms
+# of the license agreement you entered into with Retrologic.
+#
+# ===========================================================================
+#
+# This script file is an example of how to preserve class, interface, 
+# method and field names from obfuscation by the RetroGuard Bytecode 
+# Obfuscator. Use it with the BNF grammar for these RetroGuard script
+# (*.rgs) files given in the file 'RgsGrammar.txt'.
+#
+# Included in the forthcoming commercial release of RetroGuard will be 
+# a graphical interface for the simple generation of these script files.
+# For most Java applets and applications the script file will, however, 
+# be very straightforward. For applets, reserve the name of the applet class:
+#
+# .class COM/yourpackage/YourApplet 
+#
+# For applications, reserve the class name and public methods in your 
+# 'main' class:
+#
+# .class COM/yourpackage/YourApplication public method
+#
+# For Java libraries, things can get more complicated. Each of the classes, 
+# interfaces, methods and fields that are to be accessed by users of the 
+# library must be preserved. 
+.class com/wingfoot/Constants public field
+.class com/wingfoot/QName protected 
+.class com/wingfoot/tools/Java2WSDL protected 
+.class com/wingfoot/tools/Options protected  
+.class com/wingfoot/tools/WSDL2Java protected  
+.class com/wingfoot/wsdl/Extension protected  
+.class com/wingfoot/wsdl/MessageFormat protected 
+.class com/wingfoot/wsdl/WSDLReader protected 
+.class com/wingfoot/wsdl/Binding protected 
+.class com/wingfoot/wsdl/BindingOperation protected 
+.class com/wingfoot/wsdl/Message protected 
+.class com/wingfoot/wsdl/Operation protected 
+.class com/wingfoot/wsdl/Part protected 
+.class com/wingfoot/wsdl/Port protected 
+.class com/wingfoot/wsdl/PortType protected 
+.class com/wingfoot/wsdl/Service protected 
+.class com/wingfoot/wsdl/WSDLHolder protected 
+.class com/wingfoot/wsdl/WSDLReaderInstance protected 
+.class com/wingfoot/wsdl/WSDLException protected 
+.class com/wingfoot/wsdl/gen/BaseWriter protected 
+.class com/wingfoot/wsdl/gen/DeploymentDescriptorWriter protected 
+.class com/wingfoot/wsdl/gen/DeploymentDescriptorWriterInstance protected 
+.class com/wingfoot/wsdl/gen/JavaReader protected 
+.class com/wingfoot/wsdl/gen/JavaWriter protected 
+.class com/wingfoot/wsdl/gen/JavaHolder protected 
+.class com/wingfoot/wsdl/gen/JavaReaderInstance protected 
+.class com/wingfoot/wsdl/gen/JavaWriterInstance protected 
+.class com/wingfoot/wsdl/gen/JavaHolderException protected 
+.class com/wingfoot/wsdl/gen/BaseWriter protected 
+.class com/wingfoot/wsdl/gen/DeploymentDescriptorWriter protected
+.class com/wingfoot/wsdl/gen/DeploymentDescriptorWriterInstance protected
+.class com/wingfoot/wsdl/soap/SOAPAddress protected 
+.class com/wingfoot/wsdl/soap/SOAPBinding protected 
+.class com/wingfoot/wsdl/soap/SOAPMessage protected 
+.class com/wingfoot/wsdl/soap/SOAPOperation protected 
+.class com/wingfoot/xml/XMLHolder protected 
+.class com/wingfoot/xml/SerializedHolder protected
+.class com/wingfoot/xml/XMLFactory protected 
+.class com/wingfoot/xml/XMLException protected 
+.class com/wingfoot/xml/schema/SchemaReader protected 
+.class com/wingfoot/xml/schema/Attribute protected 
+.class com/wingfoot/xml/schema/Component protected 
+.class com/wingfoot/xml/schema/Element protected 
+.class com/wingfoot/xml/schema/SchemaHolder protected 
+.class com/wingfoot/xml/schema/SchemaReaderInstance protected 
+.class com/wingfoot/xml/schema/SchemaException protected 
+.class com/wingfoot/xml/schema/gen/SchemaConverterInstance protected 
+.class com/wingfoot/xml/schema/groups/Group protected 
+.class com/wingfoot/xml/schema/groups/ModelGroup protected 
+.class com/wingfoot/xml/schema/groups/AttributeGroupDefinition protected 
+.class com/wingfoot/xml/schema/groups/ModelGroupDefinition protected 
+.class com/wingfoot/xml/schema/groups/ModelGroupImplementation protected 
+.class com/wingfoot/xml/schema/types/Content protected 
+.class com/wingfoot/xml/schema/types/Type protected 
+.class com/wingfoot/xml/schema/types/ComplexContent protected 
+.class com/wingfoot/xml/schema/types/ComplexType protected 
+.class com/wingfoot/xml/schema/types/SimpleContent protected 
+.class com/wingfoot/xml/schema/types/SimpleType protected 
+.class com/wingfoot/xml/schema/types/TypeReference protected 
+.class com/wingfoot/xml/schema/types/XSDType protected 
+.class com/wingfoot/registry/Registry protected 
+.class com/wingfoot/registry/ClientProxy protected 
+.class com/wingfoot/registry/ClientProxyException protected 
+.class com/wingfoot/registry/ProxyMap protected
+.class com/wingfoot/registry/RegistryException protected 
+
+.class com/wingfoot/soap/encoding/Base64 protected
+.class com/wingfoot/soap/encoding/HexBinary protected
+.class com/wingfoot/soap/encoding/BaseSerializer protected
+.class com/wingfoot/soap/encoding/BeanSerializer protected
+.class com/wingfoot/soap/encoding/WSerializable protected
+.class com/wingfoot/soap/encoding/AbstractSerializer protected
+.class com/wingfoot/soap/encoding/ComplexTypeDeserializer protected
+.class com/wingfoot/soap/encoding/ComplexTypeSerializer protected
+.class com/wingfoot/soap/encoding/LiteralDeserializer protected
+.class com/wingfoot/soap/encoding/LiteralSerializer protected
+.class com/wingfoot/soap/encoding/SectionVDeserializer protected
+.class com/wingfoot/soap/encoding/SectionVSerializer protected
+.class com/wingfoot/soap/encoding/SOAPDeserializer protected
+.class com/wingfoot/soap/encoding/SOAPSerializer protected
+.class com/wingfoot/soap/encoding/SerializerDeserializer protected
+.class com/wingfoot/soap/encoding/TypeDeserializer protected
+.class com/wingfoot/soap/encoding/TypeSerializer protected
+.class com/wingfoot/soap/encoding/TypeMappingRegistry protected
+.class com/wingfoot/soap/encoding/UntypedObject protected
+.class com/wingfoot/soap/Call protected
+.class com/wingfoot/soap/Constants public field
+.class com/wingfoot/soap/Envelope protected
+.class com/wingfoot/soap/IEnvelope protected
+.class com/wingfoot/soap/LiteralEnvelope protected
+.class com/wingfoot/soap/Fault protected
+.class com/wingfoot/soap/HeaderEntry protected
+.class com/wingfoot/soap/transport/J2SEHTTPTransport protected
+.class com/wingfoot/soap/transport/Transport protected
+.class com/wingfoot/soap/SOAPElement protected
+.class com/wingfoot/soap/SOAPException protected
+.class com/wingfoot/soap/server/DeploymentAdmin protected
+.class com/wingfoot/soap/server/HTTPListener protected
+.class com/wingfoot/soap/server/DeploymentException protected
+.class com/wingfoot/soap/server/SOAPRouter protected
+.class com/wingfoot/soap/server/Service protected
+.class com/wingfoot/soap/server/RouterException protected
+.class com/wingfoot/xml/SerializedHolder protected 
+.class com/wingfoot/tools/ant/NamespaceToPackageMapping protected 
+.class com/wingfoot/tools/ant/DeployServiceAntTask protected 
+.class com/wingfoot/tools/ant/Java2WSDLAntTask protected 
+.class com/wingfoot/tools/ant/ListServiceAntTask protected 
+.class com/wingfoot/tools/ant/UndeployServiceAntTask protected 
+.class com/wingfoot/tools/ant/WSDL2JavaAntTask protected 
+
+#
+# One point to note is that names are specified in the .rgs file using 
+# the syntax of the Java virtual machine, not the syntax of the Java 
+# language. This is because RetroGuard is a general purpose JVM bytecode 
+# obfuscator, and so it is inappropriate to tie its syntax to that of the
+# Java language. In particular, package and class names are separated by 
+# a '/', not a '.' (COM/yourpackage/YourApplet, not COM.yourpackage.YourApplet)
+# Also, when specifying individual methods or fields for preservation,  
+# the JVM syntax for specifying types is used. So a method 'File getFile(int i)' 
+# in an interface 'COM.yourpackage.YourInterface' is preserved using:
+#
+# .method COM/yourpackage/YourInterface/getFile (I)Ljava/io/File;
+#
+# In the commercial release of RetroGuard, a graphical interface will be 
+# provided in order to shield you from this gritty detail. In most cases for a
+# product, you will spend a few minutes writing the '.rgs' script at the
+# beginning of your development cycle, add the obfuscation step to your 
+# daily build procedure, and forget about RetroGuard, secure in the knowledge 
+# that your product's proprietary information will be safe from reverse 
+# compilation. 
+#
+# The single line of script used for the obfuscation of 'retroguard.jar' itself
+# is given below. 
+#
+# -----------------------------------------------------------------------------
+#
+# Use the following to switch off pruning of known attributes
+# .attribute	SourceFile
+# .attribute	LocalVariableTable
+# .attribute	LineNumberTable
+#
+# This exposes the public interfaces of the RetroGuard JAR
+.class RGgui
+.method RGgui/main ([Ljava/lang/String;)V
+.class RGpatch
+.method RGpatch/main ([Ljava/lang/String;)V
+.class RGconv
+.method RGconv/main ([Ljava/lang/String;)V
+.class RetroGuard
+.method RetroGuard/main ([Ljava/lang/String;)V
